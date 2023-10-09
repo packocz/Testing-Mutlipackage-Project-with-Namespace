@@ -1,37 +1,45 @@
 {
-  "packageDirectories": [
-    {
-      "path": "src/with-namespace",
-      "default": false,
-      "package": "temp-namespace-service",
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
-      "versionDescription": ""
-    },
-    {
-      "path": "src/without-namespace",
-      "default": false,
-      "package": "temp-no-namespace-service",
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
-      "versionDescription": ""
-    },
-    {
-      "path": "src/temp",
-      "default": true,
-      "package": "temp-no-namespace-controller",
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
-      "versionDescription": ""
-    }
-  ],
-  "name": "MultiPackageNamespace",
-  "namespace": "packocz",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "58.0",
-  "packageAliases": {
-    "temp-namespace-service": "0Ho08000000GmeuCAC",
-    "temp-no-namespace-service": "0Ho08000000Gmf9CAC",
-    "temp-no-namespace-controller": "0Ho08000000Gmf4CAC"
-  }
+	"packageDirectories": [
+		{
+			"path": "src/with-namespace",
+			"default": false,
+			"package": "temp-namespace-service",
+			"versionName": "ver 0.1",
+			"versionNumber": "0.1.0.NEXT",
+			"versionDescription": ""
+		},
+		{
+			"path": "src/without-namespace",
+			"default": false,
+			"package": "temp-no-namespace-service",
+			"versionName": "ver 0.1",
+			"versionNumber": "0.1.0.NEXT",
+			"versionDescription": ""
+		},
+		{
+			"path": "src/temp",
+			"default": true,
+			"package": "temp-no-namespace-controller",
+			"versionName": "ver 0.1",
+			"versionNumber": "0.1.0.NEXT",
+			"versionDescription": "",
+			"dependencies": [
+				{
+					"package": "04t08000000l1okAAA"
+				},
+				{
+					"package": "04t08000000l1ouAAA"
+				}
+			]
+		}
+	],
+	"name": "MultiPackageNamespace",
+	"namespace": "packocz",
+	"sfdcLoginUrl": "https://login.salesforce.com",
+	"sourceApiVersion": "58.0",
+	"packageAliases": {
+		"temp-namespace-service": "0Ho08000000GmeuCAC",
+		"temp-no-namespace-service": "0Ho08000000Gmf9CAC",
+		"temp-no-namespace-controller": "0Ho08000000Gmf4CAC"
+	}
 }
