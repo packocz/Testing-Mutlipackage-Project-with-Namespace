@@ -25,10 +25,26 @@
 			"versionDescription": "",
 			"dependencies": [
 				{
-					"package": "04t08000000l1okAAA"
+					"package": "04t08000000l1p9AAA"
 				},
 				{
-					"package": "04t08000000l1ouAAA"
+					"package": "04t08000000l1pEAAQ"
+				}
+			]
+		},
+		{
+			"path": "src/consumer-with-namespace",
+			"package": "consumer-with-namespace",
+			"versionName": "ver 0.1",
+			"versionNumber": "0.1.0.NEXT",
+			"default": false,
+			"versionDescription": "",
+			"dependencies": [
+				{
+					"package": "04t08000000l1p9AAA"
+				},
+				{
+					"package": "04t08000000l1pEAAQ"
 				}
 			]
 		}
@@ -40,6 +56,7 @@
 	"packageAliases": {
 		"temp-namespace-service": "0Ho08000000GmeuCAC",
 		"temp-no-namespace-service": "0Ho08000000Gmf9CAC",
-		"temp-no-namespace-controller": "0Ho08000000Gmf4CAC"
+		"temp-no-namespace-controller": "0Ho08000000Gmf4CAC",
+		"consumer-with-namespace": "0Ho08000000GmfECAS"
 	}
 }
